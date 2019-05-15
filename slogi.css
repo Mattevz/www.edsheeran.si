@@ -1,0 +1,239 @@
+:root {
+	--modra: #739ad0;
+	--rjava: #6b3305;
+	--svetlo-rjava: #efe9e7;
+	--bela: #fff;
+	--crna: #000;
+	--obroba: 1px solid #ddd;
+	--rob: 20px;
+}
+
+html,body{
+	margin: 0;
+	padding: 0;
+	font-family: arial, tahoma, helvetica, sans-serif;
+	font-size: 13px;
+	color: var(--crna);
+}
+
+
+body {
+	background: #f7f9fb url('./Grafika/ozadje.jpg') no-repeat center;
+}
+
+#ZgornjaPasica {
+	width: 950px;
+	height: 100px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: flex-end;
+}
+
+.Logo {
+	margin-left: var(--rob);
+}
+
+#FacebookTwitter {
+	margin-right: var(--rob);
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+#FacebookTwitter a {
+	margin-bottom: 8px;
+	margin-left: 5px;
+}
+
+#FacebookTwitter p {
+	font-size: 14px;
+}
+
+#GlavniOkvir {
+	margin: 0 auto 0 auto;
+	width: 950px;
+}
+
+#Glava {
+	background-image: url('./Grafika/glava.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	height: 200px;
+	width: 950px;
+	border-top-left-radius: var(--rob);
+	border-top-right-radius: var(--rob);
+}
+
+#Navigacija {
+	background: deepskyblue no-repeat center top;
+	background-size: cover;
+	height: 30px;
+	width: 950px;
+}
+
+#Navigacija ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	list-style-type: none;
+	height: 30px;
+	margin: 0;
+}
+
+#Navigacija a:link,
+#Navigacija a:visited,
+#Navigacija a:hover,
+#Navigacija a:active {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	border-bottom: 0px;
+	padding: 7px 10px;
+	box-sizing: border-box;
+	transition: all .75s ease;
+}
+
+#Navigacija a:hover,
+#Navigacija a:active {
+	background-color: rgba(115,155,210,.35);
+	transition: all 1s ease;
+}
+
+#Vsebina {
+	min-height: 350px;
+	width: 950px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+#Clanek {
+	background-color: var(--bela);
+	padding: var(--rob);
+	box-sizing: border-box;
+	margin: 10px 10px 10px 0;
+	min-height: 350px;
+	width: 690px;
+}
+
+#Clanek2 {
+	background-color: var(--bela);
+	padding: var(--rob);
+	box-sizing: border-box;
+	margin: 10px 10px 10px 0;
+	min-height: 350px;
+	width: 690px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#Sorodno {
+	background-color: var(--svetlo-rjava);
+	padding: var(--rob);
+	border-radius: var(--rob);
+	margin: 10px 0;
+	box-sizing: border-box;
+	min-height: 350px;
+	width: 250px;
+}
+
+h1 {
+	font-size: 14px;
+	font-weight: bold;
+	color: var(--modra);
+	border-bottom: var(--obroba);
+}
+
+h2 {
+	font-size: 14px;
+	font-weight: bold;
+	color: var(--crna);
+	border-bottom: var(--obroba);
+}
+
+.SlikaVClanku {
+	float: right;
+	margin: 0 0 var(--rob) var(--rob);
+	box-shadow: 2px 2px 3px 2px rgba(51,51,51,.75);
+	transition: all 1s ease;
+}
+
+.SlikaVClanku:hover {
+	box-shadow: 2px 2px 5px 4px rgba(51,51,51,.75);
+	transition: all .75s ease;
+	filter: contrast(150%);
+}
+
+.Tabela {
+	border-collapse: collapse;
+	border: 3px;
+	margin: 0 auto;
+}
+
+.Tabela th {
+	border: 1px solid black;
+	background-color: lightgray;
+	padding-right: 100px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.Tabela td {
+	border: 1px solid black;
+	background-color: white;
+	padding-right: 100px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#Noga {
+	background-image: linear-gradient(to bottom, var(--modra) 0, var(--modra) 10%, var(--bela) 10%, var(--bela) 15%, var(--rjava) 15%, var(--rjava) 100%);
+	background-repeat: repeat-x;
+	color: var(--bela);
+	padding: 18px 0 0 var(--rob);
+	margin-bottom: 45px;
+	box-sizing: border-box;
+	height: 45px;
+	width: 950px;
+}
+
+#Noga a {
+	color: var(--bela);
+	text-decoration: none;
+}
+
+#Noga a:hover {
+	text-decoration: underline;
+}
+
+div ｛
+	height: 200px;
+	width: 200px;
+｝
+
+#Obrazec {
+	background-color: var(--bela);
+	padding: var(--rob);
+	box-sizing: border-box;
+	margin: 10px 10px 10px 0;
+	min-height: 350px;
+	width: 690px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+}
+
+
